@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/Katsukiniwa/argocd-app-config.git
-    targetVersion: HEAD
+    targetRevision: HEAD
     path: dev
   destination:
     server: https://kubernetes.default.svc
@@ -18,6 +18,6 @@ spec:
     syncOptions:
     - CreateNamespace=true
 
-    autonated:
+    automated:
       selfHeal: true
       prune: true
